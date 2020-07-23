@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1595515789438.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E94DC361",
+    "lastKnownWriteTime" : 1595518408,
+    "last_content_update" : 1595518408347,
+    "path" : "~/R/mmr/R/matrix_multiplication.R",
+    "project_path" : "R/matrix_multiplication.R",
+    "properties" : {
+        "cursorPosition" : "69,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

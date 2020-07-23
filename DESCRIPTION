@@ -1,0 +1,13 @@
+Package: mmr
+Type: Package
+Title: Matrix Multiplication on data.frames
+Version: 0.1.0
+Author: Steve Condylios [aut, cre] (<https://orcid.org/0000-0003-0599-844X>)
+Maintainer: Steve Condylios <steve.condylios@gmail.com>
+BugReports: https://github.com/stevecondylios/mmr/issues
+License: MIT + file LICENSE
+URL: https://github.com/stevecondylios/mmr
+Description: Simple helpers for matrix multiplication on data.frames  
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
