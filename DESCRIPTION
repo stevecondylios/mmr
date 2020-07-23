@@ -1,6 +1,6 @@
 Package: mmr
 Type: Package
-Title: Matrix Multiplication on data.frames
+Title: Matrix Multiplication on Data.frames
 Version: 0.1.0
 Author: Steve Condylios [aut, cre] (<https://orcid.org/0000-0003-0599-844X>)
 Maintainer: Steve Condylios <steve.condylios@gmail.com>
