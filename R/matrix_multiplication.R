@@ -1,11 +1,11 @@
 
 #' Matrix Multiplication
 #'
-#' Multiplies two matricies. A wrapper around `matmalt()`` (i.e. `%*%``) that handles
+#' Multiplies two matricies. A wrapper around `matmalt()` (i.e. `%*%`) that handles
 #'     `data.frame`s
 #' @name mm
 #'
-#' @usage mm(x, y)
+#' @usage mm(x, y, return_matrix)
 #'
 #' @param x A numeric matrix or vector
 #' @param y A numeric matrix or vector
@@ -46,11 +46,11 @@ mm <- function(x, y, return_matrix = FALSE) {
 
 #' Matrix Multiplication
 #'
-#' Multiplies two matricies. A wrapper around `matmalt()`` (i.e. `%*%``) that handles
+#' Multiplies two matricies. A wrapper around `matmalt()` (i.e. `%*%`) that handles
 #'     `data.frame`s
 #' @name mm
 #'
-#' @usage x \%mm\% y
+#' @usage "\%mm\%"(x, y, return_matrix)
 #'
 #' @param x A numeric matrix or vector
 #' @param y A numeric matrix or vector

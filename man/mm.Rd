@@ -5,9 +5,9 @@
 \alias{\%mm\%}
 \title{Matrix Multiplication}
 \usage{
-mm(x, y)
+mm(x, y, return_matrix)
 
-x \%mm\% y
+"\%mm\%"(x, y, return_matrix)
 }
 \arguments{
 \item{x}{A numeric matrix or vector}
@@ -22,10 +22,10 @@ The matrix product as a data.frame or matrix
 The matrix product as a data.frame or matrix
 }
 \description{
-Multiplies two matricies. A wrapper around `matmalt()`` (i.e. `%*%``) that handles
+Multiplies two matricies. A wrapper around `matmalt()` (i.e. `%*%`) that handles
     `data.frame`s
 
-Multiplies two matricies. A wrapper around `matmalt()`` (i.e. `%*%``) that handles
+Multiplies two matricies. A wrapper around `matmalt()` (i.e. `%*%`) that handles
     `data.frame`s
 }
 \examples{
