@@ -1,14 +1,15 @@
 
 #' Matrix Multiplication
 #'
-#' Multiplies two matricies. A wrapper around \code{matmalt()} (i.e. \code{%*%}) that handles
-#'     \code{data.frame}s
+#' Multiplies two matricies. A wrapper around `matmalt()`` (i.e. `%*%``) that handles
+#'     `data.frame`s
 #' @name mm
 #'
 #' @usage mm(x, y)
 #'
 #' @param x A numeric matrix or vector
 #' @param y A numeric matrix or vector
+#' @param return_matrix Defaults to returning a data.frame (FALSE). Set to TRUE to return a matrix
 #'
 #' @return The matrix product as a data.frame or matrix
 #'
@@ -24,16 +25,19 @@
 
 
 
+mm <- function(x, y, return_matrix = FALSE) {
 
+ if(!"matrix" %in% class(x)) { x <- as.matrix(x) }
+ if(!"matrix" %in% class(x)) { x <- as.matrix(y) }
+ out <- .Primitive("%*%")(x, y)
 
+ if(return_matrix == FALSE) {
+   out <- as.data.frame(out)
+ }
 
+ out
 
-
-
-
-
-
-
+}
 
 
 
@@ -42,14 +46,15 @@
 
 #' Matrix Multiplication
 #'
-#' Multiplies two matricies. A wrapper around \code{matmalt()} (i.e. \code{%*%}) that handles
-#'     \code{data.frame}s
+#' Multiplies two matricies. A wrapper around `matmalt()`` (i.e. `%*%``) that handles
+#'     `data.frame`s
 #' @name mm
 #'
 #' @usage x \%mm\% y
 #'
 #' @param x A numeric matrix or vector
 #' @param y A numeric matrix or vector
+#' @param return_matrix Defaults to returning a data.frame (FALSE). Set to TRUE to return a matrix
 #'
 #' @return The matrix product as a data.frame or matrix
 #'
@@ -63,6 +68,19 @@
 #' x %mm% y
 #'
 
+'%mm%' <- function(x, y, return_matrix = FALSE) {
+
+ if(!"matrix" %in% class(x)) { x <- as.matrix(x) }
+ if(!"matrix" %in% class(x)) { x <- as.matrix(y) }
+ out <- .Primitive("%*%")(x, y)
+
+  if(return_matrix == FALSE) {
+   out <- as.data.frame(out)
+ }
+
+ out
+
+}
 
 
 
