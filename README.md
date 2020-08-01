@@ -11,7 +11,7 @@ understood, and serviced.
 library(mmr)
 ```
 
-### Matrix Mulitplication on `data.frame`s
+### Matrix Multiplication on `data.frame`s
 
 `mm()` accepts two data.frame’s and returns their matrix product:
 
