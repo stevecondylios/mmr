@@ -1,17 +1,17 @@
 
 # mmr
 
-`mmr` provides simple helpers for matrix multiplication on data.frames.
-These allow for more concise code during low level mathematical
-operations, and help ensure code is more easily read, understood, and
-serviced.
+`mmr` provides simple helpers for matrix multiplication on
+`data.frame`s. These allow for more concise code during low level
+mathematical operations, and help ensure code is more easily read,
+understood, and serviced.
 
 ``` r
 # install.packages("mmr")
 library(mmr)
 ```
 
-### Matrix Mulitplication `data.frame`s
+### Matrix Mulitplication on `data.frame`s
 
 `mm()` accepts two data.frame’s and returns their matrix product:
 
@@ -26,7 +26,7 @@ mm(x, y)
     ## 2 16
     ## 3 20
 
-`%mm%` offers the same functionality, but in infix form:
+`%mm%` offers the same functionality in infix form:
 
 ``` r
 x <- data.frame(a=c(1,2,3), b=c(5,6,7))
